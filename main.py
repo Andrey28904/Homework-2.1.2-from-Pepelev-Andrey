@@ -171,7 +171,7 @@ class Report:
         fig, axis = plt.subplots(2, 2)
         plt.rcParams['font.size'] = 8
         self.standart_bar(axis[0, 0], self.data.year_to_salary.keys(), self.data.year_to_salary_needed.keys(),
-                          self.data.year_to_count.values(), self.data.year_to_count_needed.values(),
+                          self.data.year_to_salary.values(), self.data.year_to_salary_needed.values(),
                           "Средняя з/п", "з/п программист", "Уровень зарплат по годам")
         self.standart_bar(axis[0, 1], self.data.year_to_count.keys(), self.data.year_to_count_needed.keys(),
                           self.data.year_to_count.values(), self.data.year_to_count_needed.values(),
